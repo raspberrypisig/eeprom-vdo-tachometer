@@ -9,6 +9,6 @@ with open('arduino-eepromdump.txt') as f:
         print('0', end='')
         print(int(i), end='')
       else:
-        print('{:x}'.format(int(i)), end='')
+        print('{:02x}'.format(int(i)), end='')
       print(' ', end='')
 print()
