@@ -17,7 +17,8 @@ for (int i=0; i<32; i++){
   for (int j=0; j<8; j++) {   
     byte val =  Wire.read();
     Serial.print(val);
-    Serial.print(' ');
+    if j != 7:
+      Serial.print(' ');
   }
   Serial.println();
 }
