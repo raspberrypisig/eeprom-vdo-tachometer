@@ -1,7 +1,7 @@
 #include "Wire.h"
 
 #define EEPROM_ADDRESS 0x57
-#define QWORD 8 // for formatting reasons, read 8 bytes at a time
+#define QWORD_LENGTH 8 // for formatting reasons, read 8 bytes at a time
 #define NUM_QWORDS 32 // 256/QWORD
 
 void setup() {
@@ -17,8 +17,8 @@ Wire.endTransmission(false);
 Serial.println("printing values");
 
 for (int i=0; i<NUM_QWORDS; i++){
-  Wire.requestFrom(EEPROM_ADDRESS, QWORD);
-  for (int j=0; j<QWORD; j++) {   
+  Wire.requestFrom(EEPROM_ADDRESS, QWORD_LENGTH);
+  for (int j=0; j<QWORD_LENGTH; j++) {   
     byte val =  Wire.read();
     char buf[2];
     sprintf(buf, "%02x", val);
