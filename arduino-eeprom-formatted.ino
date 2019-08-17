@@ -1,10 +1,5 @@
 #include "Wire.h"
 
-// Read address FA
-// the value should be 210 = D2
-
-byte dump[256];
-
 void setup() {
   // put your setup code here, to run once:
 Serial.begin(9600);
