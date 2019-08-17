@@ -22,8 +22,7 @@ for (int i=0; i<NUM_QWORDS; i++){
     byte val =  Wire.read();
     char buf[2];
     sprintf(buf, "%02x", val);
-    Serial.print(buf);    
-    
+    Serial.print(buf);
     if j != 7:
       Serial.print(' ');
   }
