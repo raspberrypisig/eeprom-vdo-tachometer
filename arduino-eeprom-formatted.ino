@@ -2,7 +2,7 @@
 
 #define EEPROM_ADDRESS 0x57
 #define QWORD_LENGTH 8 // for formatting reasons, read 8 bytes at a time
-#define NUM_QWORDS 32 // 256/QWORD
+#define NUM_QWORDS 32 // 256 / QWORD_LENGTH
 
 void setup() {
   // put your setup code here, to run once:
