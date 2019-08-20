@@ -23,7 +23,7 @@ for (int i=0; i<NUM_QWORDS; i++){
     char buf[2];
     sprintf(buf, "%02x", val);
     Serial.print(buf);
-    if j != 7:
+    if (j != 7)
       Serial.print(' ');
   }
   Serial.println();
